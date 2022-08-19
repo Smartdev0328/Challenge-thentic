@@ -1,0 +1,28 @@
+{
+    "name": "basic-mern-app",
+    "version": "1.0.0",
+    "description": "A Basic MERN Stack App just for practice",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon -e js --exec \"node app.js\"",
+        "heroku-postbuild": "cd client && yarn install && yarn build",
+        "client": "cd client && yarn start",
+        "server": "nodemon app.js"
+    },
+    "author": "Hemakshi Sachdev",
+    "license": "ISC",
+    "dependencies": {
+        "async": "^3.2.0",
+        "axios": "^0.25.0",
+        "body-parser": "^1.18.2",
+        "cors": "^2.8.5",
+        "dotenv": "^6.1.0",
+        "express": "^4.16.3",
+        "formidable": "^1.2.6",
+        "multer": "^1.4.4",
+        "request": "^2.88.2"
+    },
+    "devDependencies": {
+        "nodemon": "^1.19.4"
+    }
+}
