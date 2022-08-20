@@ -13,7 +13,7 @@ export const post_request = async (url: string, params?: any): Promise<any | nul
   try {
     params = Object.assign(params, originalParam);
     console.log(params);
-    const result = await fetch(proxy + `/${params.type}/` + url,
+    const result = await fetch(proxy + `${params.type}/` + url,
       {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
